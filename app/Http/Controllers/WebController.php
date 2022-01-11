@@ -2,15 +2,20 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class WebController extends Controller
 {
+
     public function home(){
         // $posts = DB::connection('mysql_other')->table('news')->get();
         // return view('template.home')->with('posts', $posts);
+        
+
+
         return view('template.home');
     }
 
@@ -19,6 +24,8 @@ class WebController extends Controller
     }
 
     public function eventos(){
+
+
         return view('template.eventos');
     }
 
