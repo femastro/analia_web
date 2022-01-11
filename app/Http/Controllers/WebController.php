@@ -13,10 +13,10 @@ class WebController extends Controller
     public function home(){
         // $posts = DB::connection('mysql_other')->table('news')->get();
         // return view('template.home')->with('posts', $posts);
-        
+        $posts = DB::connection('mysql_other')->table('posts')->get();
 
 
-        return view('template.home');
+        return view('template.home', compact('posts'));
     }
 
     public function nosotros(){
